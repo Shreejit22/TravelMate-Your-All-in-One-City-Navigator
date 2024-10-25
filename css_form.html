@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FORM</title>
+    <style>
+        input[type=text],select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing:border-box;
+        }
+            
+            input[type=Date],select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing:border-box;
+            }
+            
+            input[type=password],select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing:border-box;
+            }
+            
+            input[type=submit],select{
+            width: 70%;
+            padding: 12px 30px;
+            margin: 8px 0;
+            display: inline-block;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            
+            }
+            input[type=submit]:hover{
+                background-color: blue;
+            }
+
+
+    
+        div{
+            border-radius: 5px;
+            background-color: rgb(33, 31, 27);
+            padding: 20px;
+            width: 350px;
+        }
+
+        .b{
+            padding: 20px;
+            background-color:rgb(255, 255, 255);
+            
+        }
+        video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-size: cover;
+    }
+    @media(min-aspect-ratio:16/9){
+        video{
+            width: 100%;
+            height: auto;
+        }
+    }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted plays-inline>
+        <source src="aboutUs.mp4" type="Video/mp4">
+    </video>
+    
+
+    <center>
+        <h2 style="font-size: 45px; text-decoration: underline;">Sign In</h2>
+        <div>  <form action="insta_logo_account_crt.html" target="_blank">
+            <label for="name" style="color: aliceblue;">First Name :</label>
+            <input type="text"id="fname"name="first name"placeholder="your first name">
+            
+            <label for="name"  style="color: aliceblue;">Last Name :</label>
+            <input type="text"id="lname"name="last name"placeholder="your last name">
+            <label for="DATE"  style="color: aliceblue;">Date of Birth : </label>
+            <input type="date"id="date"name="date"placeholder="Enter your Date of Birth">
+            <label for="text"  style="color: aliceblue;">Enter Password</label>
+            <input type="password"id="password"name="password"placeholder="Enter Password">
+            <label for="text"  style="color: aliceblue;">Conform Password</label>
+            <input type="password"id="password"name="password"placeholder="Re-enter Password">
+            <center><input type="submit"id="submit"name="submit"></center>
+            
+            
+
+        </form>
+        </div>
+    </center>
+
+
+</body>
+</html>
