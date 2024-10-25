@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+</head>
+<style>
+    video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-size: cover;
+    }
+    @media(min-aspect-ratio:16/9){
+        video{
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+<body>
+    <video autoplay loop muted plays-inline>
+        <source src="under.mp4" type="Video/mp4">
+    </video>
+</body>
+</html>
